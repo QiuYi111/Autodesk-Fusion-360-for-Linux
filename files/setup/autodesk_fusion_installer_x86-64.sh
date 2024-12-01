@@ -191,9 +191,7 @@ function install_required_packages {
             echo -e "$(gettext "${GREEN}All required packages for the installer are installed!")${NOCOLOR}"
             sleep 2
         elif [[ $DISTRO_VERSION == *"debian"* ]] || [[ $DISTRO_VERSION == *"ubuntu"* ]] \
-        || [[ $DISTRO_VERSION == *"mint"* ]] || [[ $DISTRO_VERSION == *"pop"* ]]\
-        [[ $DISTRO_VERSION == *"zorin"* ]]
-        ; then
+        || [[ $DISTRO_VERSION == *"mint"* ]] || [[ $DISTRO_VERSION == *"zorin"* ]]; then
             echo -e "$(gettext "${YELLOW}All required packages for the installer will be installed!")${NOCOLOR}"
             sleep 2
             sudo apt-get install -y gawk cabextract coreutils curl lsb-release mesa-utils p7zip p7zip-full p7zip-rar policykit-1 samba spacenavd winbind wget xdg-utils bc x11-xserver-utils
