@@ -881,7 +881,7 @@ function check_and_install_wine() {
                 apt-get remove wine* --purge
                 apt-get autoremove -y
                 apt-get install -y --install-recommends winehq-staging'
-        elif [[ $DISTRO_VERSION == *"Ubuntu"*"22.04"* ]] || [[ $DISTRO_VERSION == *"Linux"*"Mint"*"21"* ]] || [[ $DISTRO_VERSION == *"pop"*"20"* ]]; then
+        elif [[ $DISTRO_VERSION == *"Ubuntu"*"22.04"* ]] || [[ $DISTRO_VERSION == *"Linux"*"Mint"*"21"* ]] || [[ $DISTRO_VERSION == *"zorin"*"17"* ]]; then
             echo "Installing Wine for Ubuntu 22.04 ..."
             pkexec bash -c '
                 dpkg --add-architecture i386
@@ -894,7 +894,7 @@ function check_and_install_wine() {
                 apt-get remove wine* --purge
                 apt-get autoremove -y
                 apt-get install -y --install-recommends winehq-staging'
-        elif [[ $DISTRO_VERSION == *"Ubuntu"*"24.04"* ]] || [[ $DISTRO_VERSION == *"Linux"*"Mint"*"22"* ]] || [[ $DISTRO_VERSION == *"zorin"*"17"* ]]; then
+        elif [[ $DISTRO_VERSION == *"Ubuntu"*"24.04"* ]] || [[ $DISTRO_VERSION == *"Linux"*"Mint"*"22"* ]] || [[ $DISTRO_VERSION == *"pop"*"17"* ]]; then
             echo "Installing Wine for Ubuntu 24.04 ..."
             pkexec bash -c '
                 dpkg --add-architecture i386
